@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="images/noFilter.webp">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="images/noFilter.webp" />
 </head>
-<body class = contacto>
-    <header class = "contacto-header">
-        <a class = "logo" href="index.html"><img src="images/stacked_black.webp" alt="logo"></a>
-
-
+<body class="contacto">
+  <header class="contacto-header">
+    <a class="logo" href="index.html"><img src="images/stacked_black.webp" alt="logo" /></a>
     <nav>
-        <ul>
-       <section class = "opciones">
-            <li><a href="1bienvenida.html">Bienvenida</a></li>
-            <li><a href="2trama.html">Trama</a></li>
-            <li><a href="3reparto.html">Reparto</a></li>
-            <li><a href="4plataformas.html">Plataformas</a></li>
-            <li><a href="5contacto.html">Contacto</a></li>
-       </section>
-    </ul>
-      
+      <ul>
+        <section class="opciones">
+          <li><a href="1bienvenida.html">Bienvenida</a></li>
+          <li><a href="2trama.html">Trama</a></li>
+          <li><a href="3reparto.html">Reparto</a></li>
+          <li><a href="4plataformas.html">Plataformas</a></li>
+          <li><a href="5contacto.html">Contacto</a></li>
+        </section>
+      </ul>
     </nav>
-</header>
+  </header>
 
+  <main class="contacto-contenedor">
+    <h2 class="contacto-titulo">Contactanos</h2>
+    <form class="contacto-formulario" action="https://formsubmit.co/bautirevelchion@gmail.com" method="POST">
+      <label class="contacto-label" for="nombre">Nombre:</label>
+      <input class="contacto-input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
+      <label class="contacto-label" for="email">Correo electronico:</label>
+      <input class="contacto-input" type="email" id="email" name="email" placeholder="sungjinwoo@yahoo.com" required>
 
+      <label class="contacto-label" for="mensaje">Mensaje:</label>
+      <textarea class="contacto-textarea" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <button class="contacto-boton" type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>bautistarevelchion@gmail.com // +54 11 2376 5554</p>
+  </footer>
 </body>
 </html>

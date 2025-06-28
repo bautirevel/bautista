@@ -1,3 +1,16 @@
+body h2 {
+    letter-spacing: 4px;
+}
+
+body h1 {
+    letter-spacing: 5px;
+}
+
+body p {
+    letter-spacing: 2px;
+    font-size: larger;
+}
+
 .index {
     background-color: black;
     background-size: cover;
@@ -43,8 +56,9 @@
 }
 
 .plataformas {
-    background-image: url(../images/wallpaper/SoloLeveling-S2-KV1-UW-LTR.avif);
-    background-position-y: 170px;
+    background-image: url(../images/wallpaper/WhatsApp\ Image\ 2025-06-27\ at\ 15.43.45.jpeg);
+    background-position: center;
+    background-size: cover; 
 }
 
 header {
@@ -83,7 +97,9 @@ nav ul {
 nav li{
     display: inline-flex;
     font-family: 'fuente';
-    font-size: 14px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: 1.0s;
 }
 
 nav a {
@@ -94,6 +110,7 @@ nav a {
 
 nav li:hover {
     background-color: rgb(42, 0, 141);
+    transform: rotate(360deg);
 }
 
 ul {
@@ -212,23 +229,42 @@ ul {
 }
 
 .crunchy-logo img {
-    width: 300px;
+    width: 400px;
     height: auto;
+    transition: 2.0s;
+}
+
+.crunchy-logo img:hover {
+    transform: scale(1.2);
 }
 
 .crunchy-logo {
     margin-top: 80px;
-    margin-left: 130px;
+    margin-left: 130px;    
 }
 
 .flv-logo img {
     width: 450px;
     height: auto;
+    transition: 2.0s;
+}
+
+.flv-logo img:hover {
+    transform: scale(1.2);
 }
 
 .flv-logo {
-    margin-top: 55px;
-    margin-left: 55px;
+    margin-top: 300px;
+    margin-left: 100px;
+    margin-bottom: -80px;
+}
+
+header img {
+    transition: 2.0s;
+}
+
+header img:hover {
+    transform: scale(1.1);
 }
 
 footer {
@@ -263,3 +299,103 @@ footer p {
 .numero {
     margin-left: 30px;
 }
+
+.contacto {
+    background-image: url(../images/wallpaper/4wzu54baniie1.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contacto-contenedor {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+    width: 800px;
+    margin: 80px auto;
+    font-family: 'fuente';
+}
+
+.contacto-titulo {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'fuente';
+}
+
+.contacto-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-label {
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.contacto-input,
+.contacto-textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'fuente';
+    background-color: #eee;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.contacto-input::placeholder,
+.contacto-textarea::placeholder {
+    color: #666;
+}
+
+.contacto-boton {
+    width: fit-content;
+    padding: 12px 24px;
+    font-size: 20px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'fuente';
+    transition: 0.3s;
+    align-self: center;
+    letter-spacing: 2px;
+}
+
+.contacto-boton:hover {
+    background-color: purple;
+}
+
+.error {
+    background-color: #000000;
+    background-image: url(../images/wallpaper/70ce41310f8a9c2a84e97b57198015d9.gif);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -35%;
+}
+
+.error-gif {
+    display: flex;
+}
+
+#sobre {
+    padding: 2rem;
+    border-radius: 10px;
+}
+  
+  #sobre audio,
+  #sobre iframe {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 100px;
+  }
